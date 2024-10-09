@@ -1,0 +1,78 @@
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--all-white);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Cards */
+.card1, .card2 {
+  text-align: left;
+  background-color: var(--light-blue);
+  padding: 16px 36px;
+  border-radius: 16px;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card2 {
+  margin: 32px 0px 40px;
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--black);
+}
+
+p {
+  font-size: 18px;
+  color: var(--black);
+}
+
+/* Botão */
+.btn {
+  background-color: var(--all-black);
+  border: none;
+  border-radius: 40px;
+  padding: 20px 36px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px 20px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 18px 30px;
+    font-size: 18px;
+  }
+}
