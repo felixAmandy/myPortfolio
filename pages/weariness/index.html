@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="/styles/global.css"> 
+    <title>Encontre o que Fazer - Tédio</title>
+</head>
+<body>
+
+    <!-- Background dinâmico que segue o movimento do mouse -->
+    <div class="background-gradient" id="gradient"></div>
+    
+    <!-- Container principal que agrupa título, filtros e resultados -->
+    <div class="main-container">
+
+        <!-- Título da página -->
+        <div class="title-container">
+            <h1>TÉDIO</h1>
+        </div>
+
+        <!-- Seção de filtros e resultados -->
+        <div class="container">
+
+            <!-- Filtros de atividade -->
+            <div class="filters-container">
+                <div class="filter-row">
+                    <select id="effort">
+                        <option value="" disabled selected>Grau de esforço</option>
+                        <option value="baixo">Baixo</option>
+                        <option value="médio">Médio</option>
+                        <option value="alto">Alto</option>
+                    </select>
+
+                    <select id="company">
+                        <option value="" disabled selected>Companhia</option>
+                        <option value="sozinho">Sozinho</option>
+                        <option value="grupo">Em grupo</option>
+                    </select>
+
+                    <select id="category">
+                        <option value="" disabled selected>Categoria</option>
+                        <option value="criativa">Criativa</option>
+                        <option value="relaxante">Relaxante</option>
+                        <option value="divertido">Divertido</option>
+                        <option value="educacional">Educacional</option>
+                        <option value="produtiva">Produtiva</option>
+                    </select>
+                </div>
+
+                 <!-- Botão para gerar nova atividade -->
+                <button id="new-activity-btn">Acabe com o meu tédio!</button>
+                
+                <!-- TODO: Botão para voltar -->
+            </div>
+
+            <!-- Seção de resultados onde as atividades são exibidas -->
+            <div class="results-container" id="results-container">
+                <div class="card" id="description-card">
+                    <h3>Encontre algo para fazer</h3>
+                    <p>Aqui você pode encontrar atividades para passar o tempo de acordo com suas preferências e grau de esforço.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Rodapé com informações do autor -->
+    <footer style="position: fixed; bottom: 10px; right: 10px; color: #bbb; font-size: 0.7rem;">
+        <p>Espero que goste 😊</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="js/script.js"></script> <!-- Link para o JavaScript externo -->
+</body>
+</html>
