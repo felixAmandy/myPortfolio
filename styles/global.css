@@ -21,9 +21,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* TODO: Principalmente relacionado a btns e imagens */
+/* Principalmente relacionado a btns e imagens */
 a {
   text-decoration: none;
 }

@@ -1,22 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--light-purple);
+    background-color: #121212;
     color: var(--all-white);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 40px;
+
 }
 
-/* Gradiente dinâmico no fundo, 
-que segue o movimento do mouse */
+/* Gradiente dinâmico no fundo, que segue o movimento do mouse */
 .background-gradient {
     position: fixed;
     top: 0;
@@ -25,7 +19,7 @@ que segue o movimento do mouse */
     height: 100vh;
     pointer-events: none;
     z-index: -1;
-    background-color: var(--light-blue);
+    background-color: #1a1a1a;
 }
 
 /* Container principal que organiza o conteúdo */
@@ -38,19 +32,19 @@ que segue o movimento do mouse */
     align-items: left;
 }
 
-.title-container {
+/* .title-container {
     text-align: left;
     margin-bottom: -50px;
-}
+} */
 
 /* Estilo do título principal da página */
-h1 {
+/* h1 {
     font-family: 'Arial Black', helvetica, sans-serif;
     font-size: 8rem;
-    color: var(--black);
-    /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); */
+    color: var(--all-white);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
-}
+} */
 
 /* Estilo geral do container dos filtros e resultados */
 .container {
@@ -94,8 +88,8 @@ select {
 }
 
 /* Estilos do botão */
-button {
-    background-color: var(--purple);
+.btn {
+    background-color: var(--light-purple);
     color: var(--all-white);
     border: none;
     padding: 12px 20px;
@@ -107,9 +101,8 @@ button {
     width: 100%;
 }
 
-/* Efeito hover no botão */
-button:hover {
-    background-color: var(--light-purple);
+.btn:hover {
+    background-color: rgb(124, 155, 255);
 }
 
 /* Container dos resultados */
@@ -122,7 +115,7 @@ button:hover {
 
 /* Efeito hover na caixa de resultados */
 .results-container:hover {
-    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+    transform: scale(1.02);
 }
 
 /* Estilo dos cards de atividades */
@@ -138,7 +131,7 @@ button:hover {
 }
 
 .card h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -155,8 +148,28 @@ button:hover {
     color: #ddd;
 }
 
+.info-paragraph {
+    color: #bbb;
+    font-size: 0.6rem;
+    margin-top: 10px;
+}
 
-/* Estilos para dispositivos móveis (telas menores) */
+.close {
+    text-align: center;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        color: var(--light-blue);
+        text-decoration: underline;
+    }
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -167,13 +180,12 @@ button:hover {
         flex-direction: column;
     }
 
-    h1 {
+    /* h1 {
         font-size: 5rem;
         margin-bottom: 30px;
-        font-family: -apple-system, BlinkMacSystemFont,"San Francisco", "Roboto", Arial, sans-serif;
-        font-weight: 900; /* Para garantir que Black seja usado */
-
-    }
+        font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Roboto", Arial, sans-serif;
+        font-weight: 900;
+    } */
 
     /* Ajustar os campos de pesquisa no mobile */
     select {
@@ -192,5 +204,5 @@ button:hover {
         font-size: 2rem;
     }
 
-    
+
 }

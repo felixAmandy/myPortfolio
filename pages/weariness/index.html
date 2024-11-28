@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="/styles/global.css"> 
-    <title>Encontre o que Fazer - Tédio</title>
-</head>
-<body>
+    <title>Tédio🤓</title>
+    <link rel="icon" href="/assets/icon/wireframes.ico" type="image/x-icon">
 
-    <!-- Background dinâmico que segue o movimento do mouse -->
+    <!-- Meus styles -->
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Background dinâmico -->
     <div class="background-gradient" id="gradient"></div>
-    
-    <!-- Container principal que agrupa título, filtros e resultados -->
+
+    <!-- Container principal -->
     <div class="main-container">
 
-        <!-- Título da página -->
-        <div class="title-container">
+        <!-- Título -->
+        <!-- <div class="title-container">
             <h1>TÉDIO</h1>
-        </div>
+        </div> -->
 
         <!-- Seção de filtros e resultados -->
         <div class="container">
-
             <!-- Filtros de atividade -->
             <div class="filters-container">
                 <div class="filter-row">
@@ -51,28 +54,40 @@
                     </select>
                 </div>
 
-                 <!-- Botão para gerar nova atividade -->
-                <button id="new-activity-btn">Acabe com o meu tédio!</button>
-                
-                <!-- TODO: Botão para voltar -->
+                <!-- Botão para gerar nova atividade -->
+                <button class="btn" id="new-activity-btn">Acabe com o meu tédio!</button>
+
+                <!-- Informações sobre o projeto -->
+                <div class="info-container">
+                    <p class="info-paragraph">Descubra algo para espantar o tédio! Escolha o nível de esforço que está
+                        disposto a investir, decida se prefere fazer a atividade sozinho ou com companhia e selecione a
+                        categoria que mais te agrada. Transforme seu tempo livre em momentos divertidos e produtivos!
+                    </p>
+                </div>
+
+                <a href="/pages/home.html" class="close">Sair</a>
             </div>
 
-            <!-- Seção de resultados onde as atividades são exibidas -->
+            <!-- Seção de Resultados -->
             <div class="results-container" id="results-container">
                 <div class="card" id="description-card">
                     <h3>Encontre algo para fazer</h3>
-                    <p>Aqui você pode encontrar atividades para passar o tempo de acordo com suas preferências e grau de esforço.</p>
+                    <p>Escolha atividades personalizadas para o seu momento. Quer algo relaxante ou desafiador? Prefere
+                        curtir sozinho ou com amigos? Explore opções criativas e divertidas para transformar qualquer
+                        instante de tédio em uma experiência que combina com você. Seu tempo livre merece ser especial!
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-   
-    <!-- Rodapé com informações do autor -->
+
+    <!-- Rodapé -->
     <footer style="position: fixed; bottom: 10px; right: 10px; color: #bbb; font-size: 0.7rem;">
         <p>Espero que goste 😊</p>
     </footer>
 
-    <!-- Link para o arquivo JavaScript externo -->
-    <script src="js/script.js"></script> <!-- Link para o JavaScript externo -->
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
