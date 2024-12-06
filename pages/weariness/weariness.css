@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;  /* A fonte padrão parece q ficou melhor*/
     background-color: #121212;
     color: var(--all-white);
     display: flex;

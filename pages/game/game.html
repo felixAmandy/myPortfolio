@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snoopy's Game</title>
+  <link rel="icon" href="/assets/icon/game.ico" type="image/x-icon">
+
+  <!-- Meus Styles -->
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/pages/game/game.css">
+</head>
+
+<body>
+  <main>
+    <div class="the-game">
+      <h1>JOGO DA VELHA</h1>
+      <hr>
+      <div class="game">
+        <button data-i="1"></button>
+        <button data-i="2"></button>
+        <button data-i="3"></button>
+        <button data-i="4"></button>
+        <button data-i="5"></button>
+        <button data-i="6"></button>
+        <button data-i="7"></button>
+        <button data-i="8"></button>
+        <button data-i="9"></button>
+      </div>
+      <h2 class="currentPlayer"></h2>
+    </div>
+  </main>
+
+  <!-- Modal / Alerte -->
+  <div id="alertModal" class="modal">
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <div class="card-title-wrapper">
+          <span class="card-title">⭐</span>
+        </div>
+        <div class="card-text">
+          <p id="modalText"></p>
+        </div>
+        <button type="button" class="btn-again" id="restartButton">De novo</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="/pages/inside/finish.html" target="_blank">
+    <button class="btn">Voltar</button>
+  </a>
+
+  <!-- Meus Scripts -->
+  <script src="/pages/game/game.js"></script>
+</body>
+
+</html>
